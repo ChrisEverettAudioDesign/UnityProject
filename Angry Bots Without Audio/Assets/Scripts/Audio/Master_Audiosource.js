@@ -10,10 +10,7 @@ var MaxVolumeVariation = 0.6f;
 
 var ProbabilityOfSFXPlaying = 1f;
 
-function Update(){
-
-	//Press Spacebar to triggerSFX from array GET RID OF THIS! WHEN YOU ARE HAPPY THAT THE CODE IS WORKING!
-	if(Input.GetButtonUp("Jump"))
+function Start(){
 
 	{
 
