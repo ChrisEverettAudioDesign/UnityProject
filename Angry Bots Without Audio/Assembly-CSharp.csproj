@@ -45,9 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Audio\AudioGateController.cs" />
      <Compile Include="Assets\Scripts\Animation\Escape\DelayedDeactivation.cs" />
      <Compile Include="Assets\Scripts\Animation\Escape\Eject.cs" />
      <Compile Include="Assets\Scripts\Animation\Escape\TheGreatActivator.cs" />
+     <Compile Include="Assets\Scripts\Audio\AdvancedSnapshotCrossfade.cs" />
      <Compile Include="Assets\Scripts\Fx\GlowPlaneOrient.cs" />
      <Compile Include="Assets\Scripts\Fx\ReflectionFx.cs" />
      <Compile Include="Assets\Scripts\Misc\DemoControl.cs" />
