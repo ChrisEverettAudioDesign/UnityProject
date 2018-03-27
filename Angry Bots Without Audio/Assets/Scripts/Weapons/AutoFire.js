@@ -10,6 +10,7 @@ var firing : boolean = false;
 var damagePerSecond : float = 20.0;
 var forcePerSecond : float = 20.0;
 var hitSoundVolume : float = 0.5;
+var BulletTailSource : AudioSource;
 
 var muzzleFlashFront : GameObject;
 
@@ -83,5 +84,7 @@ function OnStopFire () {
 	muzzleFlashFront.SetActive (false);
 
 	if (GetComponent.<AudioSource>())
+		BulletTailSource.Play ();
 		GetComponent.<AudioSource>().Stop ();
+		
 }
