@@ -4,6 +4,7 @@
 
 private var health : Health;
 private var animationComp : Animation;
+var AdditionalSFX : AudioSource;
 
 health = GetComponent.<Health> ();
 animationComp = GetComponentInChildren.<Animation> ();
@@ -25,6 +26,7 @@ function OnHacking () {
 
 function OnHackingCompleted () {
 	GetComponent.<AudioSource>().Play ();
+	AdditionalSFX.Play ();
 	animationComp.Stop ();
 	enabled = false;
 }
